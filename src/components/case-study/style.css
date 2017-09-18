@@ -99,6 +99,11 @@
   margin: 16px 0;
 }
 
+.text a {
+  color: #f00;
+  text-decoration: none;
+}
+
 @media (min-width: 600px) {
   .text {
     display: grid;

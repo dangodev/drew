@@ -9,18 +9,25 @@
 
 .photo {
   height: auto;
-  left: 0;
-  position: absolute;
-  top: 0;
   width: 100%;
 }
 
 .photowrapper {
-  display: flex;
-  height: 0;
-  padding-top: 49.5%;
   position: relative;
-  width: 66%;
+}
+
+@media (min-width: 600px) {
+  .photo {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  .photowrapper {
+    display: flex;
+    height: 0;
+    padding-top: 49.5%;
+    width: 66%;
+  }
 }
 
 .link {
@@ -35,6 +42,7 @@
 
 .links {
   display: flex;
+  margin-left: 16px;
 }
 
 .text {
@@ -51,6 +59,8 @@
   font-size: 12px;
   line-height: 1.5;
   margin: 16px 0;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 @media (min-width: 600px) {
@@ -60,16 +70,28 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 48px;
   }
+}
 
+@media (min-width: 1100px) {
   .text p {
     margin: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .elsewhere {
   font-size: 16px;
   margin-bottom: 16px;
+  margin-left: 16px;
   margin-top: 16px;
+}
+
+@media (min-width: 1100px) {
+  .elsewhere,
+  .links {
+    margin-left: 0;
+  }
 }
 
 .colophon {
@@ -77,6 +99,8 @@
   font-weight: 400;
   margin-bottom: 120px;
   margin-top: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: center;
 }
 

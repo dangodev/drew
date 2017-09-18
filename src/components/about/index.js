@@ -19,29 +19,49 @@ export default class About extends Component {
         </div>
         <div class={style.text}>
           <p>
-            I’ve been designing and building web apps professionally both as a
-            freelancer and through digital agencies since 2010. Since 2013, I’ve
-            been a part of <a href="http://madewithenvy.com" target="_blank">Envy
-            Labs</a>’ design team, working on large-scale applications
-            like <a href="https://techrocket.com" target="_blank">Tech
-            Rocket</a> and <a href="https://www.realthread.com" target="_blank">Real
-            Thread</a>, as well as passion projects
-            like <a href="http://orlandocreators.com">Orlando Creators</a>. I
-            enjoy having some hand in every part of the process, from IA, to
-            design, to prototyping, to front- and back-end dev. Though over
-            the years I’ve found I’m most motivated when I get to design /
-            animate / art direct, and see it through to execution.
+            I’ve been a designer and builder of the Web since 2010,
+            both through managing my own clients as well as working for
+            digital agencies. Since 2013, I’ve focused on large-scale design
+            systems and front-end architecture for web apps
+            through <a href="http://madewithenvy.com" target="_blank">Envy
+            Labs</a>. I share things I’ve learned
+            on <a href="https://medium.com/@drew_powers"
+            target="_blank">Medium</a>, and I promote our local design heroes
+            through <a href="http://orlandocreators.com" target="_blank">Orlando
+            Creators</a>. I also enjoy mentoring younger designers and developers
+            through things like <a
+            href="https://orlando.aiga.org/event/spot-showcase-2017/"
+            target="_blank">Orlando
+            AIGA</a> and organizing meetups
+            like <a href="https://www.meetup.com/Front-End-Orlando/"
+            target="_blank">Front-end
+            Orlando</a>.             Recently I’ve been passionate about learning 3D
+            (<a href="https://codepen.io/dangodev/" target="_blank">CodePen</a> | <a
+            href="https://dribbble.com/shots/3728388-Dribbbpill"
+            target="_blank">Dribbble</a>) and <a
+            href="https://speakerdeck.com/dangodev/virtual-and-augmented-reality"
+            target="_blank">VR/AR</a>, trying to understand how both fit better
+            into the Web.
           </p>
           <p>
-            Since 2016 I’ve been a mentor in some fashion,
-            through my <a href="https://orlando.aiga.org/event/spot-showcase-2017/" target="_blank">local
-            AIGA chapter</a> and through
-            organizing meetups
-            like <a href="https://www.meetup.com/Front-End-Orlando/" target="_blank">Front-end
-            Orlando</a>. I also enjoy outdoorsing with my lovely wife, Hillery,
-            rock climbing, and seeing new places (also with Hillery;
-            rock climbing is still growing on her). I’d like to write a comic
-            book someday, but we’ll see how that goes.<br/>
+            Some things I believe:
+            <br/>
+            <br/>
+            1/ Good design and ideas should endure. Even if they’re old. Even
+            if they’re not mine.
+            2/ Just because something is true doesn’t mean it’s helpful (stolen quote).
+            3/ <a href="http://99percentinvisible.org/article/least-resistance-desire-paths-can-lead-better-design/"
+            target="_blank">Pave desire paths</a>.
+            4/ Hype is always useful—either as a wave to ride, or an
+            opportunity to observe.
+            5/ Honest people are always interesting (also <a
+            href="http://sagmeisterwalsh.com/work/all/things-i-have-learned-in-my-life-so-far/"
+            target="_blank">stolen</a>).
+            6/ Just say what you want—in <a
+            href="https://hackernoon.com/for-the-love-of-god-please-tell-me-what-your-company-does-c2f0b835ab92"
+            target="_blank">design</a> and life.
+            7/ Be kind.
+            <br/>
             <br/>
             But enough about me. <a href="mailto:drew@pow.rs?subject=Hello%20Stranger">Tell me about you</a>!
           </p>
@@ -57,7 +77,7 @@ export default class About extends Component {
           <a class={style.link} href="https://github.com/dangodev" target="_blank">
             <img src={github} alt="Drew Powers on GitHub"/>
           </a>
-          <a class={style.link} href="https://codepen.io/dangodev/pens/popular/" target="_blank">
+          <a class={style.link} href="https://codepen.io/dangodev/" target="_blank">
             <img src={codepen} alt="Drew Powers on CodePen"/>
           </a>
           <a class={style.link} href="https://dribbble.com/drewpowers" target="_blank">
