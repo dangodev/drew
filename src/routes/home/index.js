@@ -47,15 +47,15 @@ export default class Home extends Component {
         </p>
         <p>
           Every part of Mama’s complex process was boiled down into a
-          three-part funnel: 1) force users to browse printing to see what
-          spot printing looks like, 2) see estimated cost [3] (this weeded
-          out a large number of non-clients), and 3) ask serious clients very
-          specific questions about their project in a detailed quote form [4]
-          (I love forms. They’re my favorite). This process was a great
-          gut-check for clients to tell if they’re ready to submit. If not,
-          they are pointed to the Design-wise™ section [5], an online brain
-          dump of pretty much everything their sales team had grown tired
-          of repeating.
+          three-part funnel. First, force clients to browse printing to see
+          what spot printing looks like. Second, see estimated cost [3] (this
+          weeded out a large number of non-clients). Third, ask serious
+          clients very specific questions about their project in a detailed
+          quote form [4] (I love forms. They’re my favorite). This process
+          was a great gut-check for clients to tell if they’re ready to
+          submit. If not, they are pointed to the Design-wise™ section [5],
+          an online brain dump of pretty much everything their sales team had
+          grown tired of repeating.
         </p>
         <p>
           Visually, I pulled from early 20th century typographers and
@@ -120,19 +120,19 @@ export default class Home extends Component {
           userbase that hates taking these training courses, which in itself
           is a very rewarding design challenge to overcome, but I digress).
           Along with this very specific niche came years of domain knowledge
-          and navigating the incredibly-complex regulations that surround it
-          all. CentreLearn was successful up until one company gobbled up all
-          the players in this sphere. Fortunately, Envy Labs stayed on to
-          work with the new platform, and I got to reimagine everything from
-          scratch.
+          and navigating the complex regulations that surround it all.
+          CentreLearn was doing well until one competitor bought up the
+          entire space, CentreLearn included. Fortunately, Envy Labs stayed
+          on to work with the new platform, and I got to reimagine everything
+          from scratch.
         </p>
         <p>
-          I lead the design on the project that would now serve hundreds of
-          firefighter stations and EMT teams across the country along with
-          water treatment. Ayana Campbell Smith (Envy Labs) aided design, as
-          did Jacob Swanner (Envy Labs) with domain knowledge and sanity
-          checks. We ended up building a modular design language [3/4] that
-          could be torn apart and rearranged into myriad ways to meet their
+          I lead the design on the project that would now serve tens of
+          thousands of firefighters, EMTs, and other public servants across
+          the country. Ayana Campbell Smith (Envy Labs) aided design, as did
+          Jacob Swanner (Envy Labs) with domain knowledge and sanity checks.
+          We ended up building a modular design language [3/4] that could be
+          torn apart and rearranged into myriad ways to meet their
           rapidly-evolving business needs in modern public service
           curriculum. I typeset the UI in TFJ’s Mallory/Mallory Microplus
           [5], a humanist family that shines when it comes to readability. A

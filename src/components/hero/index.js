@@ -40,9 +40,11 @@ export default class Hero extends Component {
   }
 
   componentWillMount() {
-    [D, F, U, d, e, g, n, o, p, r, s, t, u, v].forEach((letter) => {
-      (new Image()).src = letter;
-    });
+    if (typeof window !== 'undefined') {
+      [D, F, U, d, e, g, n, o, p, r, s, t, u, v].forEach((letter) => {
+        (new Image()).src = letter;
+      });
+    }
     SVGPathSegPolyfill();
     this.setState({
       engine: Matter.Engine.create(),
