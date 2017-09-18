@@ -1,8 +1,9 @@
 import { h, Component } from 'preact';
-import style from './style';
 import Matter from 'matter-js';
 
 import SVGPathSegPolyfill from '../../lib/pathseg';
+
+import style from './style';
 
 /* Assets */
 import wordsSVG from '../../assets/words.svg.txt';
@@ -39,6 +40,9 @@ export default class Hero extends Component {
   }
 
   componentWillMount() {
+    [D, F, U, d, e, g, n, o, p, r, s, t, u, v].forEach((letter) => {
+      (new Image()).src = letter;
+    });
     SVGPathSegPolyfill();
     this.setState({
       engine: Matter.Engine.create(),
