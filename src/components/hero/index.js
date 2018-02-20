@@ -3,7 +3,7 @@ import Matter from 'matter-js';
 
 import SVGPathSegPolyfill from '../../lib/pathseg';
 
-import style from './style';
+import style from './style.css';
 
 /* Assets */
 import wordsSVG from '../../assets/words.svg.txt';
