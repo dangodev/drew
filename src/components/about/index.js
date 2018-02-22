@@ -17,13 +17,12 @@ const About = () => (
     </div>
     <div className={style.text}>
       <p>
-        I’ve been a designer and builder of the Web since 2010, both through
-        managing my own clients as well as working for digital agencies. I’m
-        currently a Senior Frontend Engineer at{' '}
+        I’ve been a designer and builder of the Web since 2010. I’m currently a
+        Senior Frontend Engineer at{' '}
         <a href="https://manifold.co" target="_blank" rel="noopener noreferrer">
           Manifold
         </a>, helping to build the world’s biggest independent cloud
-        marketplace. Previously, I was creating large-scale design systems and
+        marketplace. Previously, I built large-scale design systems and
         front-end architecture for web apps through{' '}
         <a
           href="http://madewithenvy.com"
@@ -31,58 +30,48 @@ const About = () => (
           rel="noopener noreferrer"
         >
           Envy Labs
-        </a>. I share things I’ve learned on{' '}
+        </a>{' '}
+        (before that,{' '}
+        <a href="http://kmdg.com/" target="_blank" rel="noopener noreferrer">
+          KMDG
+        </a>). I’ve also managed my own clientwork for most of my career. I
+        share things I’ve learned on{' '}
         <a
           href="https://medium.com/@drew_powers"
           target="_blank"
           rel="noopener noreferrer"
         >
           Medium
-        </a>, and I promote our local design heroes through{' '}
+        </a>, and help contribute to{' '}
+        <a
+          href="https://github.com/dangodev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Source
+        </a>. In the past, I’ve preached the merits of design through{' '}
         <a
           href="http://orlandocreators.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           Orlando Creators
-        </a>. I also enjoy mentoring younger designers and developers through
-        things like{' '}
+        </a>, and have mentored designers and developers through{' '}
         <a
           href="https://orlando.aiga.org/event/spot-showcase-2017/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Orlando AIGA
+          AIGA
         </a>{' '}
-        and organizing meetups like{' '}
+        and{' '}
         <a
           href="https://www.meetup.com/Front-End-Orlando/"
           target="_blank"
           rel="noopener noreferrer"
         >
           Front-end Orlando
-        </a>. Recently I’ve been passionate about learning 3D (<a
-          href="https://codepen.io/dangodev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CodePen
-        </a>{' '}
-        |{' '}
-        <a
-          href="https://dribbble.com/shots/3728388-Dribbbpill"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Dribbble
-        </a>) and{' '}
-        <a
-          href="https://speakerdeck.com/dangodev/virtual-and-augmented-reality"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          VR/AR
-        </a>, trying to understand how both fit better into the Web.
+        </a>.
       </p>
       <p>
         Some things I believe:
