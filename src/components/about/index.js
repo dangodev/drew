@@ -17,46 +17,33 @@ const About = () => (
     </div>
     <div className={style.text}>
       <p>
-        I’ve been a designer and builder of the Web since 2010. I’m currently a
-        Senior Frontend Engineer at{' '}
+        I’ve been a designer and builder of the Web since 2010. I’m currently a Senior Frontend
+        Engineer at{' '}
         <a href="https://manifold.co" target="_blank" rel="noopener noreferrer">
           Manifold
-        </a>, helping to build the world’s biggest independent cloud
-        marketplace. Previously, I built large-scale design systems and
-        front-end architecture for web apps through{' '}
-        <a
-          href="http://madewithenvy.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </a>
+        , helping to build the world’s biggest independent cloud marketplace. Previously, I built
+        large-scale design systems and front-end architecture for web apps through{' '}
+        <a href="http://madewithenvy.com" target="_blank" rel="noopener noreferrer">
           Envy Labs
         </a>{' '}
         (before that,{' '}
         <a href="http://kmdg.com/" target="_blank" rel="noopener noreferrer">
           KMDG
-        </a>). I’ve also managed my own clientwork for most of my career. I
-        share things I’ve learned on{' '}
-        <a
-          href="https://medium.com/@drew_powers"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </a>
+        ). I’ve also managed my own clientwork for most of my career. I share things I’ve learned on{' '}
+        <a href="https://medium.com/@drew_powers" target="_blank" rel="noopener noreferrer">
           Medium
-        </a>, and help contribute to{' '}
-        <a
-          href="https://github.com/dangodev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </a>
+        , and help contribute to{' '}
+        <a href="https://github.com/dangodev/" target="_blank" rel="noopener noreferrer">
           Open Source
-        </a>. In the past, I’ve preached the merits of design through{' '}
-        <a
-          href="http://orlandocreators.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </a>
+        . In the past, I’ve preached the merits of design through{' '}
+        <a href="http://orlandocreators.com" target="_blank" rel="noopener noreferrer">
           Orlando Creators
-        </a>, and have mentored designers and developers through{' '}
+        </a>
+        , and have mentored designers and developers through{' '}
         <a
           href="https://orlando.aiga.org/event/spot-showcase-2017/"
           target="_blank"
@@ -71,28 +58,31 @@ const About = () => (
           rel="noopener noreferrer"
         >
           Front-end Orlando
-        </a>.
+        </a>
+        .
       </p>
       <p>
         Some things I believe:
         <br />
         <br />
-        1/ Good design and ideas should endure. Even if they’re old. Even if
-        they’re not mine. 2/ Just because something is true doesn’t mean it’s
-        helpful. 3/ <a
+        1/ Good design and ideas should endure. Even if they’re old. Even if they’re not mine.
+        2/ Just because something is true doesn’t mean it’s helpful. 3/ 
+        <a
           href="http://99percentinvisible.org/article/least-resistance-desire-paths-can-lead-better-design/"
           target="_blank"
           rel="noopener noreferrer"
         >
           Pave desire paths
-        </a>. 4/ Hype is always useful—either as a wave to ride, or an
-        opportunity to observe. 5/ <a
+        </a>
+        . 4/ Hype is always useful—either as a wave to ride, or an opportunity to observe. 5/ 
+        <a
           href="http://sagmeisterwalsh.com/work/all/things-i-have-learned-in-my-life-so-far/"
           target="_blank"
           rel="noopener noreferrer"
         >
           Honest people are always interesting
-        </a>. 6/ Just say what you want—in{' '}
+        </a>
+        . 6/ Just say what you want—in{' '}
         <a
           href="https://hackernoon.com/for-the-love-of-god-please-tell-me-what-your-company-does-c2f0b835ab92"
           target="_blank"
@@ -104,9 +94,7 @@ const About = () => (
         <br />
         <br />
         But enough about me.{' '}
-        <a href="mailto:drew@pow.rs?subject=Hello%20Stranger">
-          Tell me about you
-        </a>!
+        <a href="mailto:drew@pow.rs?subject=Hello%20Stranger">Tell me about you</a>!
       </p>
     </div>
     <h3 className={style.elsewhere}>Elsewhere</h3>
@@ -162,11 +150,7 @@ const About = () => (
         Very Cool Studio
       </a>{' '}
       / PWA made possible by{' '}
-      <a
-        href="https://github.com/developit/preact-cli"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://github.com/developit/preact-cli" target="_blank" rel="noopener noreferrer">
         Preact CLI
       </a>
     </div>

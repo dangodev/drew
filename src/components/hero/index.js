@@ -1,5 +1,6 @@
 import { h, Component } from 'preact';
 import Matter from 'matter-js';
+import decomp from 'poly-decomp';
 
 import SVGPathSegPolyfill from '../../lib/pathseg';
 
@@ -7,6 +8,10 @@ import style from './style.css';
 
 /* Assets */
 import wordsSVG from '../../assets/words.svg.txt';
+
+if (typeof window !== 'undefined') {
+  window.decomp = decomp;
+}
 
 const prod = process.env.NODE_ENV === 'production';
 const D = prod ? require('../../assets/big-d.png') : '/assets/big-d.png';
@@ -25,34 +30,60 @@ const u = prod ? require('../../assets/little-u.png') : '/assets/little-u.png';
 const v = prod ? require('../../assets/little-v.png') : '/assets/little-v.png';
 
 const textures = [
-  U, null, D, e, s, null, null, g, n, e, r,
-  F, r, o, n, t, null, e, n, d, D, e, v, e, null, o, p, e, r,
-  F, null, null, g, u, r, e, r, null, o, u, t, e, r,
+  U,
+  null,
+  D,
+  e,
+  s,
+  null,
+  null,
+  g,
+  n,
+  e,
+  r,
+  F,
+  r,
+  o,
+  n,
+  t,
+  null,
+  e,
+  n,
+  d,
+  D,
+  e,
+  v,
+  e,
+  null,
+  o,
+  p,
+  e,
+  r,
+  F,
+  null,
+  null,
+  g,
+  u,
+  r,
+  e,
+  r,
+  null,
+  o,
+  u,
+  t,
+  e,
+  r,
 ];
 
+const engine = Matter.Engine.create();
+
 export default class Hero extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      engine: {},
-    };
-  }
-
-  componentWillMount() {
-    if (typeof window !== 'undefined') {
-      [D, F, U, d, e, g, n, o, p, r, s, t, u, v].forEach((letter) => {
-        (new Image()).src = letter;
-      });
-    }
-    SVGPathSegPolyfill();
-    this.setState({
-      engine: Matter.Engine.create(),
-    });
-  }
-
   componentDidMount() {
-    const engine = this.state.engine;
+    [D, F, U, d, e, g, n, o, p, r, s, t, u, v].forEach(letter => {
+      new Image().src = letter;
+    });
+    SVGPathSegPolyfill();
+
     const render = Matter.Render.create({
       element: document.querySelector('#matter-canvas'),
       engine,
@@ -65,9 +96,7 @@ export default class Hero extends Component {
       },
     });
 
-    window.scrollY >= 4
-      ? this.state.engine.world.gravity.scale = -0.0001
-      : this.state.engine.world.gravity.scale = 0;
+    window.scrollY >= 4 ? (engine.world.gravity.scale = -0.0001) : (engine.world.gravity.scale = 0);
 
     const scale = 1.3;
     const textureScale = 0.31;
@@ -84,20 +113,24 @@ export default class Hero extends Component {
     words.innerHTML = wordsSVG;
     words.querySelectorAll('path').forEach((pathEl, i) => {
       const bb = pathEl.getBoundingClientRect();
-      const renderOptions = textures[i] === null
-        ? { fillStyle: '#000' }
-        : { fillStyle: 'transparent', sprite: {
-          texture: textures[i],
-          xScale: textureScale,
-          xOffset: 0,
-          yScale: textureScale,
-          yOffset: 0.0005 * bb.height,
-        } };
+      const renderOptions =
+        textures[i] === null
+          ? { fillStyle: '#000' }
+          : {
+              fillStyle: 'transparent',
+              sprite: {
+                texture: textures[i],
+                xScale: textureScale,
+                xOffset: 0,
+                yScale: textureScale,
+                yOffset: 0.0005 * bb.height,
+              },
+            };
       Matter.World.add(
-        this.state.engine.world,
+        engine.world,
         Matter.Bodies.fromVertices(
           (bb.left + bb.width / 2) * scale + xStart,
-          (bb.top + window.scrollY + (bb.height / 2)) * scale + yStart,
+          (bb.top + window.scrollY + bb.height / 2) * scale + yStart,
           Matter.Vertices.scale(Matter.Svg.pathToVertices(pathEl), scale, scale),
           { render: renderOptions }
         )
@@ -105,28 +138,27 @@ export default class Hero extends Component {
     });
 
     Matter.World.add(
-      this.state.engine.world,
-      Matter.Bodies.rectangle(window.innerWidth/2, -60, window.innerWidth, 120, {
-        render: { fillStyle: '#fff' }, isStatic: true,
+      engine.world,
+      Matter.Bodies.rectangle(window.innerWidth / 2, -60, window.innerWidth, 120, {
+        render: { fillStyle: '#fff' },
+        isStatic: true,
       })
     );
-    Matter.Engine.run(this.state.engine);
+    Matter.Engine.run(engine);
     Matter.Render.run(render);
 
     const scrollHandler = () => {
-      this.state.engine.world.gravity.scale = -0.0001;
+      engine.world.gravity.scale = -0.0001;
       window.removeEventListener('scroll', scrollHandler);
       setTimeout(() => Matter.Render.stop(render), 15000);
     };
 
-    if (this.state.engine.world.gravity.scale === 0) {
+    if (engine.world.gravity.scale === 0) {
       window.addEventListener('scroll', scrollHandler);
     }
   }
 
   render() {
-    return (
-      <div id="matter-canvas" class={style.hero}></div>
-    );
+    return <div id="matter-canvas" class={style.hero}></div>;
   }
 }

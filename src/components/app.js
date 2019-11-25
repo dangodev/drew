@@ -1,27 +1,16 @@
-import { h, Component } from 'preact';
+import { h } from 'preact';
 
 import Header from './header';
 import Hero from './hero';
 
 import Home from '../routes/home';
 
-export default class App extends Component {
+const App = () => (
+  <div id="app">
+    <Header />
+    <Hero />
+    <Home />
+  </div>
+);
 
-  /** Gets fired when the route changes.
-   *  @param {Object} event    "change" event from [preact-router](http://git.io/preact-router)
-   *  @param {string} event.url  The newly routed URL
-   */
-  handleRoute = e => {
-    this.currentUrl = e.url;
-  };
-
-  render() {
-    return (
-      <div id="app">
-        <Header />
-        <Hero />
-        <Home />
-      </div>
-    );
-  }
-}
+export default App;

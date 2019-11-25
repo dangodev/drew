@@ -6,6 +6,24 @@ import CaseStudy from '../../components/case-study';
 
 /* Assets */
 
+import lkg1 from '../../assets/little-known-goods/little-known-goods-01.gif';
+import lkg2 from '../../assets/little-known-goods/little-known-goods-02.gif';
+import lkg3 from '../../assets/little-known-goods/little-known-goods-03.gif';
+import lkg4 from '../../assets/little-known-goods/little-known-goods-04.gif';
+import lkg5 from '../../assets/little-known-goods/little-known-goods-05.gif';
+import lkg6 from '../../assets/little-known-goods/little-known-goods-06.gif';
+import ln1 from '../../assets/lineage/lineage-01.gif';
+import ln2 from '../../assets/lineage/lineage-02.gif';
+import ln3 from '../../assets/lineage/lineage-03.jpg';
+import ln4 from '../../assets/lineage/lineage-04.jpg';
+import ln5 from '../../assets/lineage/lineage-05.jpg';
+import ln6 from '../../assets/lineage/lineage-06.jpg';
+import mn1 from '../../assets/manifold/manifold-01.gif';
+import mn2 from '../../assets/manifold/manifold-02.gif';
+import mn3 from '../../assets/manifold/manifold-03.gif';
+import mn4 from '../../assets/manifold/manifold-04.jpg';
+import mn5 from '../../assets/manifold/manifold-05.gif';
+import mn6 from '../../assets/manifold/manifold-06.gif';
 import ms1 from '../../assets/mamas-sauce/mamas-sauce-01.jpg';
 import ms2 from '../../assets/mamas-sauce/mamas-sauce-02.jpg';
 import ms3 from '../../assets/mamas-sauce/mamas-sauce-03.gif';
@@ -29,10 +47,107 @@ const Home = () => (
   <div>
     <SectionTitle>Selected Work</SectionTitle>
     <CaseStudy
-      images={[ms1, ms2, ms3, ms4, ms5, ms6]}
-      title="Mama’s Sauce"
-      link="http://mamas-sauce.com"
+      images={[lkg1, lkg2, lkg3, lkg4, lkg5, lkg6]}
+      link="https://littleknowngoods.com"
       role="UX / Design / Dev"
+      title="Little Known Goods"
+    >
+      <p></p>
+    </CaseStudy>
+    <CaseStudy
+      images={[mn1, mn2, mn3, mn4, mn5, mn6]}
+      link="https://manifold.co"
+      role="Dev"
+      title="Manifold"
+    >
+      <p>
+        Manifold is creating a SaaS marketplace with Dashboards, APIs, and integration tools for any
+        platform to launch their own SaaS marketplace with little time and effort. In a startup you
+        wear many hats, and I had the privilege of leading the front-end engineering team, acted as
+        Product Engineer, mentored, and was an Engineering People Manager for a stint. Oh, and
+        always filling in interfaces with animations wherever I could [1/2/6].
+      </p>
+      <p>
+        My journey started helping expand the Manifold Dashboard [4], building React interfaces for
+        users to manage their services. As part of that, Nicole Tibaldi and I developed an
+        interactive invoice breakdown using React + D3.js [3] (that sadly never got shipped). Other
+        big projects included releasing an open-source, universal{' '}
+        <a href="https://github.com/manifoldco/ui" target="_blank" rel="noopener noreferrer">
+          Web Component library
+        </a>{' '}
+        (and{' '}
+        <a href="https://ui.sandbox.manifold.co" target="_blank" rel="noopener noreferrer">
+          docs
+        </a>
+        ). [5]
+      </p>
+      <p>
+        My open-source contributions grew here as well, where we open-sourced everything reasonable,
+        like{' '}
+        <a
+          href="https://github.com/manifoldco/swagger-to-ts"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          swagger-to-ts
+        </a>
+        ,{' '}
+        <a
+          href="https://github.com/manifoldco/graphql-gen"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          graphql-gen
+        </a>{' '}
+        , and
+        <a
+          href="https://github.com/manifoldco/react-scroll-agent"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          react-scroll-agent
+        </a>
+        .
+      </p>
+    </CaseStudy>
+    <CaseStudy
+      images={[ln1, ln2, ln3, ln4, ln5, ln6]}
+      link="https://lineageroasting.com"
+      role="UX / Design / Dev"
+      title="Lineage Roasting"
+    >
+      <p>
+        I can’t say enough about these lovely people that are changing the world with a roastery.
+        The effort put into the quality, craft, and ethical practices to ensure every farmer they
+        source from makes a fair living wage is inspiring. And others have taken notice, too—Lineage
+        has won national roasting competitions and usually becomes everyone’s favorite roaster after
+        discovering them.
+      </p>
+      <p>
+        But I digress—this project was a lot of fun. I met with Jarret & Justine Johnson, the
+        founders, and Ryan Wilcox, co-partner, to design and develop their new site. They run their
+        business through Shopify, so this site had to tap into their store there which powers all
+        their online sales and subscriptions. We also had to make sure their wholesale customers
+        were taken care of.
+      </p>
+      <p>
+        The little touches were fun, such as editing the video on the home page [1], writing brew
+        guides [4], and creating an almost load-free experience through React, React Router, and
+        Shopify’s new GraphQL API [2]. Custom admin sections also let Lineage add some unique
+        touches like coffee notes and “roasting nerd data” [2] such as elevation and origin. And
+        stunning photography from the award-winning{' '}
+        <a href="https://dylonyork.com" target="_blank" rel="noopener noreferrer">
+          Dylon York
+        </a>{' '}
+        really steals the spotlight on each page [4/5]. As far as client projects go, this is easily
+        one of my all-time favorites. And I couldn’t have worked with nicer, more talented people.
+      </p>
+    </CaseStudy>
+    <CaseStudy
+      images={[ms1, ms2, ms3, ms4, ms5, ms6]}
+      link="https://mamas-sauce.com"
+      role="UX / Design / Dev"
+      title="Mama’s Sauce"
     >
       <p>
         Who doesn’t love Mama? In 2015, Nick Sambrato contacted me with a better web vision for
@@ -69,9 +184,9 @@ const Home = () => (
     </CaseStudy>
     <CaseStudy
       images={[rt1, rt2, rt3, rt4, rt5, rt6]}
-      title="Real Thread"
       link="https://www.realthread.com"
       role="UX / Dev"
+      title="Real Thread"
     >
       <p>
         Real Thread reached out to Envy Labs in 2015 to alleviate some growing pains. When they
@@ -101,8 +216,8 @@ const Home = () => (
     </CaseStudy>
     <CaseStudy
       images={[cm1, cm2, cm3, cm4, cm5, cm6]}
-      title="Course Manager"
       role="UX / Design / Dev"
+      title="Course Manager"
     >
       <p>
         Course Manager has a long history too boring to tell, and it rightly holds a special place

@@ -1,9 +1,7 @@
-import { h, Component } from 'preact';
+import { h } from 'preact';
 
 import style from './style.css';
 
-export default class CaseStudy extends Component {
-  render() {
-    return <h1 className={style.title}>{this.props.children}</h1>;
-  }
-}
+const SectionTitle = ({ children }) => <h1 className={style.title}>{children}</h1>;
+
+export default SectionTitle;
