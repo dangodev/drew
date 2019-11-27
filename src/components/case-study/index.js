@@ -15,11 +15,18 @@ const CaseStudy = ({ children, images, link, role, title }) => {
             key={`image-${i}`}
             onClick={() => setSelectedImage(i)}
             style={{
-              backgroundImage: `url(${image})`,
               right: `${((i + 1) % 2) * 16.2037}%`,
               top: `${Math.floor(i / 2) * 33.3333}%`,
             }}
-          />
+          >
+            <img
+              alt={`${title} screenshot by Drew Powers`}
+              height="600"
+              loading="lazy"
+              src={image}
+              width="800"
+            />
+          </div>
         ))}
       </div>
       <div className={style.inner}>

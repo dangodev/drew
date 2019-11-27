@@ -10,7 +10,7 @@
     {
       "src": "/assets/drew-monogram-black.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": [32, 64, 128, 256, 512]
     }
   ]
 }

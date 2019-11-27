@@ -52,34 +52,61 @@ const Home = () => (
       role="UX / Design / Dev"
       title="Little Known Goods"
     >
-      <p></p>
+      <p>
+        Little Known Goods is a maps, art prints, and goods company and a joint venture between{' '}
+        <a href="https://hillerypowers.com" target="_blank" rel="noopener noreferrer">
+          Hillery Powers
+        </a>{' '}
+        and myself. Being mostly an ecommerce site, there are special attention to details in
+        unnoticeable places that have huge payoffs. First, carousels can be a point of frustration,
+        especially if they lag or don’t behave as expected. And for the image previews on a print
+        site, image quality is everything. The carousel progressively-loads larger images as
+        bandwidth allows, and being almost pure CSS, animates performantly&nbsp;[1].
+      </p>
+      <p>
+        Other little areas of delight over the site are added, from unexpected card shuffles [2/5]
+        to a click-free zoom [6]. This was also a return to form (at least for me), with the entire
+        site being progressively-enhanced, framework-free, and works without JavaScript. Also, being
+        my own client, I got to add a detail I’m rather proud of that few companies allow: the
+        hidden UX of privacy. When shopping on the site, we don’t load analytics, and we do
+        everything possible to minimize third-party data collection. Aside from the ethical part of
+        it, tracking and analytics can really hinder UX with slow load&nbsp;times.
+      </p>
+      <p>
+        The site will be a work in progress for a while, but I’m still proud of its current state as
+        a reminder you can never gloss over the basics. HTML and CSS are the backbone of the web,
+        and you can still build a darn good site in 2019 by betting on both.
+      </p>
     </CaseStudy>
     <CaseStudy
       images={[mn1, mn2, mn3, mn4, mn5, mn6]}
       link="https://manifold.co"
-      role="Dev"
+      role="Design / Dev"
       title="Manifold"
     >
       <p>
         Manifold is creating a SaaS marketplace with Dashboards, APIs, and integration tools for any
         platform to launch their own SaaS marketplace with little time and effort. In a startup you
         wear many hats, and I had the privilege of leading the front-end engineering team, acted as
-        Product Engineer, mentored, and was an Engineering People Manager for a stint. Oh, and
-        always filling in interfaces with animations wherever I could [1/2/6].
+        Product Engineer, mentored, and was an Engineering People Manager for a stint. But mostly my
+        “many hats” worn here were all a ruse to inject CSS animations wherever I
+        could&nbsp;[1/2/6].
       </p>
       <p>
         My journey started helping expand the Manifold Dashboard [4], building React interfaces for
         users to manage their services. As part of that, Nicole Tibaldi and I developed an
         interactive invoice breakdown using React + D3.js [3] (that sadly never got shipped). Other
-        big projects included releasing an open-source, universal{' '}
+        big projects included releasing a provider management console (pivoted / currently
+        in-progress), various updates to marketing efforts, ongoing management / updates to
+        Manifold’s web design system, and the biggest project I worked on: open-source, universal{' '}
         <a href="https://github.com/manifoldco/ui" target="_blank" rel="noopener noreferrer">
           Web Component library
         </a>{' '}
-        (and{' '}
+        (and&nbsp;
         <a href="https://ui.sandbox.manifold.co" target="_blank" rel="noopener noreferrer">
           docs
         </a>
-        ). [5]
+        ).&nbsp;[5]
       </p>
       <p>
         My open-source contributions grew here as well, where we open-sourced everything reasonable,
@@ -98,8 +125,8 @@ const Home = () => (
           rel="noopener noreferrer"
         >
           graphql-gen
-        </a>{' '}
-        , and
+        </a>
+        , and&nbsp;
         <a
           href="https://github.com/manifoldco/react-scroll-agent"
           target="_blank"
@@ -107,7 +134,15 @@ const Home = () => (
         >
           react-scroll-agent
         </a>
-        .
+        . Manifold is a dreamy engineering culture that cares about empathy and{' '}
+        <a
+          href="https://blog.powertofly.com/culture-at-manifold-2638668225.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          diversity
+        </a>
+        , and I’m lucky to still be a part of it.
       </p>
     </CaseStudy>
     <CaseStudy
@@ -121,26 +156,30 @@ const Home = () => (
         The effort put into the quality, craft, and ethical practices to ensure every farmer they
         source from makes a fair living wage is inspiring. And others have taken notice, too—Lineage
         has won national roasting competitions and usually becomes everyone’s favorite roaster after
-        discovering them.
+        discovering them. I met with Jarret & Justine Johnson, the founders, and Ryan Wilcox,
+        co-partner, to design and develop their new&nbsp;site.
       </p>
       <p>
-        But I digress—this project was a lot of fun. I met with Jarret & Justine Johnson, the
-        founders, and Ryan Wilcox, co-partner, to design and develop their new site. They run their
-        business through Shopify, so this site had to tap into their store there which powers all
-        their online sales and subscriptions. We also had to make sure their wholesale customers
-        were taken care of.
-      </p>
-      <p>
-        The little touches were fun, such as editing the video on the home page [1], writing brew
-        guides [4], and creating an almost load-free experience through React, React Router, and
-        Shopify’s new GraphQL API [2]. Custom admin sections also let Lineage add some unique
-        touches like coffee notes and “roasting nerd data” [2] such as elevation and origin. And
-        stunning photography from the award-winning{' '}
+        They had a big year ahead of them—opening a new store, expanding operations—and needed to
+        look more presentable to business partnerships with updating branding, new photography done
+        by the award-winning{' '}
         <a href="https://dylonyork.com" target="_blank" rel="noopener noreferrer">
           Dylon York
         </a>{' '}
-        really steals the spotlight on each page [4/5]. As far as client projects go, this is easily
-        one of my all-time favorites. And I couldn’t have worked with nicer, more talented people.
+        [4/5], and a new online presence. Their wholesale customers—the backbone of their
+        business—also needed better information online. So we set out to keep the core shopping
+        experience but with a more on-brand look. That resulted in my editing a video for their
+        homepage with footage they took from trips [1], and helping bring their new color system
+        onto the site: (green for dark, rich coffees; yellow for fruity coffees, pink for floral
+        coffees, etc.) [2]
+      </p>
+      <p>
+        Also central to their ethos was having data for all their coffees, from elevation to origin
+        to notes to sometime even the farmer’s name! [2] All of this is editable through their
+        Shopify Dashboard. The site leveraged the then-brand-new Shopify GraphQL API, and using
+        React & React Router it can navigate quickly and seamlessly after the initial load. As far
+        as client projects go, this is easily one of my all-time favorites. And I couldn’t have
+        worked with nicer, more talented&nbsp;people.
       </p>
     </CaseStudy>
     <CaseStudy

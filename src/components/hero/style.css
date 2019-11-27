@@ -1,8 +1,16 @@
 .hero {
-  height: 75vh;
+  height: 50vh;
   left: 0;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 1;
+}
+
+.hero canvas {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }

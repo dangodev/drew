@@ -1,6 +1,7 @@
 .header {
-  color: black;
-  height: 80vh;
+  color: hsl(var(--fg));
+  height: 50vh;
+  min-height: 24rem;
   padding: 32px;
 }
 

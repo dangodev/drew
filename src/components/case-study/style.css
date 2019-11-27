@@ -39,13 +39,25 @@
 .image {
   animation: slideOut 250ms ease-out;
   animation-fill-mode: forwards;
-  background-color: #eee;
+  background-color: hsl(var(--bg));
   cursor: pointer;
   height: 0;
   padding-top: 16.2037%;
+  overflow: hidden;
   position: absolute;
+  transform: translateZ(0);
   transition: opacity 200ms;
   width: 16.2037%;
+}
+
+.image img,
+.selectedimage img {
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
 }
 
 .image::after {
@@ -70,6 +82,7 @@
 .selectedimage {
   animation: slideIn 250ms ease-in-out;
   animation-fill-mode: forwards;
+  overflow: hidden;
   position: absolute;
   z-index: 20;
 }
@@ -94,13 +107,13 @@
 }
 
 .text p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   margin: 16px 0;
 }
 
 .text a {
-  color: #f00;
+  color: hsl(var(--interactive));
   text-decoration: none;
 }
 
@@ -118,7 +131,7 @@
 }
 
 .link {
-  color: #f00;
+  color: hsl(var(--interactive));
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
