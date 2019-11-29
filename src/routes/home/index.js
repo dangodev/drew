@@ -12,7 +12,7 @@ import lkg3 from '../../assets/little-known-goods/little-known-goods-03.gif';
 import lkg4 from '../../assets/little-known-goods/little-known-goods-04.gif';
 import lkg5 from '../../assets/little-known-goods/little-known-goods-05.gif';
 import lkg6 from '../../assets/little-known-goods/little-known-goods-06.gif';
-import ln1 from '../../assets/lineage/lineage-01.gif';
+import ln1 from '../../assets/lineage/lineage-01.jpg';
 import ln2 from '../../assets/lineage/lineage-02.gif';
 import ln3 from '../../assets/lineage/lineage-03.jpg';
 import ln4 from '../../assets/lineage/lineage-04.jpg';
@@ -47,7 +47,7 @@ const Home = () => (
   <div>
     <SectionTitle>Selected Work</SectionTitle>
     <CaseStudy
-      images={[lkg1, lkg2, lkg3, lkg4, lkg5, lkg6]}
+      images={[lkg2, lkg1, lkg3, lkg4, lkg5, lkg6]}
       link="https://littleknowngoods.com"
       role="UX / Design / Dev"
       title="Little Known Goods"
@@ -61,10 +61,10 @@ const Home = () => (
         unnoticeable places that have huge payoffs. First, carousels can be a point of frustration,
         especially if they lag or don’t behave as expected. And for the image previews on a print
         site, image quality is everything. The carousel progressively-loads larger images as
-        bandwidth allows, and being almost pure CSS, animates performantly&nbsp;[1].
+        bandwidth allows, and being almost pure CSS, animates&nbsp;performantly&nbsp;[2].
       </p>
       <p>
-        Other little areas of delight over the site are added, from unexpected card shuffles [2/5]
+        Other little areas of delight over the site are added, from unexpected card shuffles [1/5]
         to a click-free zoom [6]. This was also a return to form (at least for me), with the entire
         site being progressively-enhanced, framework-free, and works without JavaScript. Also, being
         my own client, I got to add a detail I’m rather proud of that few companies allow: the
@@ -75,7 +75,7 @@ const Home = () => (
       <p>
         The site will be a work in progress for a while, but I’m still proud of its current state as
         a reminder you can never gloss over the basics. HTML and CSS are the backbone of the web,
-        and you can still build a darn good site in 2019 by betting on both.
+        and you can still build a darn good site in 2019 by betting&nbsp;on&nbsp;both.
       </p>
     </CaseStudy>
     <CaseStudy
@@ -89,8 +89,7 @@ const Home = () => (
         platform to launch their own SaaS marketplace with little time and effort. In a startup you
         wear many hats, and I had the privilege of leading the front-end engineering team, acted as
         Product Engineer, mentored, and was an Engineering People Manager for a stint. But mostly my
-        “many hats” worn here were all a ruse to inject CSS animations wherever I
-        could&nbsp;[1/2/6].
+        “many hats” worn here are all a ruse to inject UI animations wherever I can&nbsp;[1/2/6].
       </p>
       <p>
         My journey started helping expand the Manifold Dashboard [4], building React interfaces for
@@ -126,7 +125,7 @@ const Home = () => (
         >
           graphql-gen
         </a>
-        , and&nbsp;
+        , and
         <a
           href="https://github.com/manifoldco/react-scroll-agent"
           target="_blank"
@@ -142,7 +141,7 @@ const Home = () => (
         >
           diversity
         </a>
-        , and I’m lucky to still be a part of it.
+        , and I’m lucky to still be a part of&nbsp;it.
       </p>
     </CaseStudy>
     <CaseStudy
@@ -171,7 +170,7 @@ const Home = () => (
         experience but with a more on-brand look. That resulted in my editing a video for their
         homepage with footage they took from trips [1], and helping bring their new color system
         onto the site: (green for dark, rich coffees; yellow for fruity coffees, pink for floral
-        coffees, etc.) [2]
+        coffees, etc.)&nbsp;[2]
       </p>
       <p>
         Also central to their ethos was having data for all their coffees, from elevation to origin

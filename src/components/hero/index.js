@@ -1,11 +1,13 @@
 import { h } from 'preact';
-import { useLayoutEffect } from 'preact/hooks';
+import { useState, useLayoutEffect } from 'preact/hooks';
 import Matter from 'matter-js';
 import decomp from 'poly-decomp';
 
 import style from './style.css';
 
-if (typeof window !== 'undefined') {
+if (!!global) {
+  global.decomp = decomp;
+} else {
   window.decomp = decomp;
 }
 
@@ -113,6 +115,11 @@ function scrollVelocity(newY) {
 
   scrolls = [scrolls[1], newY];
 
+  // if scroll is too fast, it’s probably not mouse action
+  if (newVelocity > window.innerHeight) {
+    return undefined;
+  }
+
   // if gaining momentum, return difference
   if (Math.abs(newVelocity) >= Math.abs(oldVelocity) && Math.abs(newVelocity) >= threshold) {
     return newVelocity;
@@ -122,15 +129,31 @@ function scrollVelocity(newY) {
   return undefined;
 }
 
-const Hero = () => {
-  useLayoutEffect(() => {
-    const engine = Matter.Engine.create();
-    engine.world.gravity.scale = 0;
+const engine = Matter.Engine.create();
+let render;
 
+const Hero = () => {
+  const [running, setRunning] = useState(true);
+
+  function scrollHandler() {
+    if (running) {
+      const deltaY = scrollVelocity(window.scrollY);
+      const now = performance.now();
+
+      // only scroll if gaining momentum and last event was > 1s ago
+      if (deltaY && now - lastEvent >= 250) {
+        lastEvent = performance.now();
+        letters.forEach(body => {
+          Matter.Body.applyForce(body, body.position, { x: 0, y: -0.0001 * deltaY });
+        });
+      }
+    }
+  }
+
+  useLayoutEffect(() => {
     const height = window.innerHeight;
     const width = window.innerWidth;
-
-    const render = Matter.Render.create({
+    render = Matter.Render.create({
       element: document.querySelector('#matter-canvas'),
       engine,
       options: {
@@ -141,6 +164,7 @@ const Hero = () => {
         wireframes: false,
       },
     });
+    engine.world.gravity.scale = 0;
 
     letters.forEach(body => {
       Matter.Body.translate(body, { x: 300, y: 40 });
@@ -164,23 +188,27 @@ const Hero = () => {
     Matter.Engine.run(engine);
     Matter.Render.run(render);
 
-    function scrollHandler() {
-      const deltaY = scrollVelocity(window.scrollY);
-      const now = performance.now();
-
-      // only scroll if gaining momentum and last event was > 1s ago
-      if (deltaY && now - lastEvent >= 250) {
-        lastEvent = performance.now();
-        letters.forEach(body => {
-          Matter.Body.applyForce(body, body.position, { x: 0, y: -0.0001 * deltaY });
-        });
-      }
-    }
-
     window.addEventListener('scroll', scrollHandler);
   }, []);
 
-  return <div id="matter-canvas" class={style.hero}></div>;
+  if (render) {
+    if (running === true) {
+      Matter.Render.run(render);
+    } else {
+      Matter.Render.stop(render);
+    }
+  }
+
+  return [
+    <div id="matter-canvas" className={style.hero}></div>,
+    <button
+      aria-title="Pause animation"
+      className={style.pause}
+      onClick={() => setRunning(!running)}
+    >
+      {running ? '■' : '▶︎'}
+    </button>,
+  ];
 };
 
 export default Hero;

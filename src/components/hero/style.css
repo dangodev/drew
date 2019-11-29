@@ -1,10 +1,13 @@
 .hero {
-  height: 50vh;
+  height: 100vh;
   left: 0;
+  overflow: hidden;
+  pointer-events: none;
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1;
+  width: 100vw;
+  z-index: 20;
 }
 
 .hero canvas {
@@ -13,4 +16,31 @@
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.pause {
+  -webkit-appearance: none;
+  align-items: center;
+  background: none;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  bottom: 2rem;
+  display: flex;
+  font-size: 16px;
+  height: 2em;
+  justify-content: center;
+  outline: none;
+  padding: 0;
+  position: fixed;
+  right: 2rem;
+  transition-duration: 150ms;
+  transition-property: border-color, color;
+  transition-timing-function: linear;
+  width: 2em;
+  z-index: 20;
+}
+
+.pause:focus {
+  background: white;
+  color: hsl(var(--interactive));
 }

@@ -27,15 +27,15 @@ const About = () => (
         <a href="http://madewithenvy.com" target="_blank" rel="noopener noreferrer">
           Envy Labs
         </a>{' '}
-        (before that,{' '}
+        , while maintaining my own client projects in between. (before that,{' '}
         <a href="http://kmdg.com/" target="_blank" rel="noopener noreferrer">
           KMDG
         </a>
-        ). I’ve also managed my own clientwork for most of my career. I share things I’ve learned on{' '}
-        <a href="https://medium.com/@drew_powers" target="_blank" rel="noopener noreferrer">
-          Medium
+        ). I speak about stuff I know at conferences like at{' '}
+        <a href="https://allthingsopen" target="_blank" rel="noopener noreferrer">
+          All Things Open
         </a>
-        , and help contribute to{' '}
+        and local meetups, and I contribute to{' '}
         <a href="https://github.com/dangodev/" target="_blank" rel="noopener noreferrer">
           Open Source
         </a>
@@ -66,16 +66,9 @@ const About = () => (
         <br />
         <br />
         1/ Good ideas should endure. Even if they’re old. Even if they’re not mine. 2/ Ideas without
-        effort are worthless. 3/ Intentions don’t matter; impacts do. 4/ Everyone puts effort into
-        something. Notice it and thank them. 5/ 
-        <a
-          href="http://sagmeisterwalsh.com/work/all/things-i-have-learned-in-my-life-so-far/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Honest people are always interesting
-        </a>
-        . 6/ Lasting relationships are built on making your intentions clear. 7/ Be kind.
+        effort are worthless. 3/ Intentions don’t matter; impacts do. 4/ Everyone tries hard at
+        something. Notice it and thank them. 5/ Good relationships are built on making your
+        intentions clear. 6/ I can always change my mind with new information. 7/ Be kind.
         <br />
         <br />
         But enough about me.{' '}
