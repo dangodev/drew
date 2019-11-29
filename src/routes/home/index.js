@@ -21,7 +21,7 @@ import ln6 from '../../assets/lineage/lineage-06.jpg';
 import mn1 from '../../assets/manifold/manifold-01.gif';
 import mn2 from '../../assets/manifold/manifold-02.gif';
 import mn3 from '../../assets/manifold/manifold-03.gif';
-import mn4 from '../../assets/manifold/manifold-04.jpg';
+import mn4 from '../../assets/manifold/manifold-04.png';
 import mn5 from '../../assets/manifold/manifold-05.gif';
 import mn6 from '../../assets/manifold/manifold-06.gif';
 import ms1 from '../../assets/mamas-sauce/mamas-sauce-01.jpg';
@@ -125,7 +125,7 @@ const Home = () => (
         >
           graphql-gen
         </a>
-        , and
+        , and{' '}
         <a
           href="https://github.com/manifoldco/react-scroll-agent"
           target="_blank"
