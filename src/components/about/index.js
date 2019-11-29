@@ -17,8 +17,8 @@ const About = () => (
     </div>
     <div className={style.text}>
       <p>
-        I’ve been a designer and builder of the Web since 2010. I’m currently a Senior Frontend
-        Engineer at{' '}
+        I’ve been a designer and builder of the Web since 2001 (but I’m not sure you can call the
+        first several years “professional”). I’m currently a Senior Front end Engineer at{' '}
         <a href="https://manifold.co" target="_blank" rel="noopener noreferrer">
           Manifold
         </a>
@@ -65,16 +65,9 @@ const About = () => (
         Some things I believe:
         <br />
         <br />
-        1/ Good design and ideas should endure. Even if they’re old. Even if they’re not mine.
-        2/ Just because something is true doesn’t mean it’s helpful. 3/ 
-        <a
-          href="http://99percentinvisible.org/article/least-resistance-desire-paths-can-lead-better-design/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Pave desire paths
-        </a>
-        . 4/ Hype is always useful—either as a wave to ride, or an opportunity to observe. 5/ 
+        1/ Good ideas should endure. Even if they’re old. Even if they’re not mine. 2/ Ideas without
+        effort are worthless. 3/ Intentions don’t matter; impacts do. 4/ Everyone puts effort into
+        something. Notice it and thank them. 5/ 
         <a
           href="http://sagmeisterwalsh.com/work/all/things-i-have-learned-in-my-life-so-far/"
           target="_blank"
@@ -82,15 +75,7 @@ const About = () => (
         >
           Honest people are always interesting
         </a>
-        . 6/ Just say what you want—in{' '}
-        <a
-          href="https://hackernoon.com/for-the-love-of-god-please-tell-me-what-your-company-does-c2f0b835ab92"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          design
-        </a>{' '}
-        and life. 7/ Be kind.
+        . 6/ Lasting relationships are built on making your intentions clear. 7/ Be kind.
         <br />
         <br />
         But enough about me.{' '}
