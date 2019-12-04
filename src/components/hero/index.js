@@ -202,7 +202,7 @@ const Hero = () => {
   return [
     <div id="matter-canvas" className={style.hero}></div>,
     <button
-      aria-title="Pause animation"
+      aria-label="Pause animation"
       className={style.pause}
       onClick={() => setRunning(!running)}
     >

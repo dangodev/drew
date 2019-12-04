@@ -17,58 +17,45 @@ const About = () => (
     </div>
     <div className={style.text}>
       <p>
-        I’ve been a designer and builder of the Web since 2001 (but I’m not sure you can call the
-        first several years “professional”). I’m currently a Senior Front end Engineer at{' '}
+        I’ve been a builder and creator of the Web since 2001, and I’m fortunate to have turned one
+        of my passions into a career. I’m a Lead Engineer at{' '}
         <a href="https://manifold.co" target="_blank" rel="noopener noreferrer">
           Manifold
         </a>
-        , helping to build the world’s biggest independent cloud marketplace. Previously, I built
-        large-scale design systems and front-end architecture for web apps through{' '}
+        , building the biggest cross-platform cloud SaaS marketplace. For my career up until
+        Manifold, I was a one-person agency and handled web apps from concept to design to
+        development (a few of which are featured above!). From 2013–2017 I built
+        medium-to-large-scale web apps through{' '}
         <a href="http://madewithenvy.com" target="_blank" rel="noopener noreferrer">
           Envy Labs
         </a>{' '}
-        , while maintaining my own client projects in between. (before that,{' '}
+        . From 2010–2012, I helped local businesses succeed at an agency called{' '}
         <a href="http://kmdg.com/" target="_blank" rel="noopener noreferrer">
           KMDG
         </a>
-        ). I speak about stuff I know at conferences like at{' '}
+        . I speak about stuff I know at conferences like at{' '}
         <a href="https://allthingsopen" target="_blank" rel="noopener noreferrer">
           All Things Open
-        </a>
+        </a>{' '}
         and local meetups, and I contribute to{' '}
         <a href="https://github.com/dangodev/" target="_blank" rel="noopener noreferrer">
           Open Source
         </a>
-        . In the past, I’ve preached the merits of design through{' '}
+        . I’ve supported local creators through{' '}
         <a href="http://orlandocreators.com" target="_blank" rel="noopener noreferrer">
           Orlando Creators
         </a>
-        , and have mentored designers and developers through{' '}
-        <a
-          href="https://orlando.aiga.org/event/spot-showcase-2017/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          AIGA
-        </a>{' '}
-        and{' '}
-        <a
-          href="https://www.meetup.com/Front-End-Orlando/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Front-end Orlando
-        </a>
-        .
+        , and have mentored the next generation developers and designers in partnerships with local
+        colleges and various community programs.
       </p>
       <p>
         Some things I believe:
         <br />
         <br />
-        1/ Good ideas should endure. Even if they’re old. Even if they’re not mine. 2/ Ideas without
+        1/ Good ideas should endure. Even if they’re old. Even if they’re not mine. 2/ Ideas without
         effort are worthless. 3/ Intentions don’t matter; impacts do. 4/ Everyone tries hard at
         something. Notice it and thank them. 5/ Good relationships are built on making your
-        intentions clear. 6/ I can always change my mind with new information. 7/ Be kind.
+        intentions clear. 6/ I can always change my mind with new information. 7/ Always be kind.
         <br />
         <br />
         But enough about me.{' '}
@@ -127,10 +114,11 @@ const About = () => (
       >
         Very Cool Studio
       </a>{' '}
-      / PWA made possible by{' '}
+      / PWA made with{' '}
       <a href="https://github.com/developit/preact-cli" target="_blank" rel="noopener noreferrer">
-        Preact CLI
-      </a>
+        Preact
+      </a>{' '}
+      / This website is encrypted and 100% tracker-free 🖤
     </div>
   </div>
 );
