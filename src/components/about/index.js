@@ -27,7 +27,7 @@ const About = () => (
         development (a few of which are featured above!). From 2013–2017 I built
         medium-to-large-scale web apps through{' '}
         <a href="http://madewithenvy.com" target="_blank" rel="noopener noreferrer">
-          Envy Labs
+          Envy&nbsp;Labs
         </a>{' '}
         . From 2010–2012, I helped local businesses succeed at an agency called{' '}
         <a href="http://kmdg.com/" target="_blank" rel="noopener noreferrer">
@@ -45,8 +45,8 @@ const About = () => (
         <a href="http://orlandocreators.com" target="_blank" rel="noopener noreferrer">
           Orlando Creators
         </a>
-        , and have mentored the next generation developers and designers in partnerships with local
-        colleges and various community programs.
+        , and have mentored developers and designers in partnerships with local colleges and various
+        community&nbsp;programs.
       </p>
       <p>
         Some things I believe:
@@ -55,7 +55,8 @@ const About = () => (
         1/ Good ideas should endure. Even if they’re old. Even if they’re not mine. 2/ Ideas without
         effort are worthless. 3/ Intentions don’t matter; impacts do. 4/ Everyone tries hard at
         something. Notice it and thank them. 5/ Good relationships are built on making your
-        intentions clear. 6/ I can always change my mind with new information. 7/ Always be kind.
+        intentions clear. 6/ I can always change my mind with new information. 7/ Always
+        be&nbsp;kind.
         <br />
         <br />
         But enough about me.{' '}

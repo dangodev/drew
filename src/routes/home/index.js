@@ -88,8 +88,11 @@ const Home = () => (
         Manifold is creating a SaaS marketplace with Dashboards, APIs, and integration tools for any
         platform to launch their own SaaS marketplace with little time and effort. In a startup you
         wear many hats, and I had the privilege of leading the front-end engineering team, acted as
-        Product Engineer, mentored, and was an Engineering People Manager for a stint. But mostly my
-        “many hats” worn here are all a ruse to inject UI animations wherever I can&nbsp;[1/2/6].
+        Product Engineer, mentored, and was an Engineering People Manager for a stint.{' '}
+        <strong>
+          Mostly, my hats were merely a disguise to sneak in animations wherever I can
+        </strong>
+        &nbsp;[1/2/6].
       </p>
       <p>
         My journey started helping expand the Manifold Dashboard [4], building React interfaces for
@@ -173,7 +176,7 @@ const Home = () => (
         coffees, etc.)&nbsp;[2]
       </p>
       <p>
-        Also central to their ethos was having data for all their coffees, from elevation to origin
+        Also central to their pathos was having data for all their coffees, from elevation to origin
         to notes to sometime even the farmer’s name! [2] All of this is editable through their
         Shopify Dashboard. The site leveraged the then-brand-new Shopify GraphQL API, and using
         React & React Router it can navigate quickly and seamlessly after the initial load. As far
@@ -193,7 +196,7 @@ const Home = () => (
         WordPress blog wasn’t cutting it, especially for the sales team that arguably spent more
         time giving clients free letterpress masterclasses than they did actually booking jobs. So
         after many, many conversations, we set out to build a better <strike>mousetrap</strike>{' '}
-        quote form.
+        quote form. <strong>And I LOVE forms</strong> (I’m not kidding).
       </p>
       <p>
         Every part of Mama’s complex process was boiled down into a three-part funnel. First, force
@@ -242,31 +245,40 @@ const Home = () => (
         psychology and priorites of their key demos were met. The result was a pretty slick
         automated quote generator [3] powered by Salesforce. Drew Smith (freelancer) handled the
         major design and art direction for the project, while I provided UX consultation [4] and
-        filled in missing design details and animations.
+        lead front-end development on the project.
       </p>
       <p>
         Customers could now not only get an instant quote—boosting Real Thread into a new online
-        retail level—but also better manage their order through the whole process [5]. And the new
-        site performed faster than their old one by a longshot. The project, completed over 4
-        months, doubled Real Thread’s customer throughput with no work/staff changes on their part,
-        and dramatically improved customer satisfaction.
+        retail level—but thanks to integrating with Salesforce, customers could manage their order
+        through the whole process, and Real Thread’s backoffice had visibility into everything [5].
+        Thanks to Angular and front-end performance optimization, the new site performed faster than
+        their old one by a longshot.{' '}
+        <strong>
+          The project, completed over 4 months, doubled Real Thread’s customer throughput with no
+          work/staff changes on their part,
+        </strong>{' '}
+        and dramatically improved customer&nbsp;satisfaction.
       </p>
     </CaseStudy>
     <CaseStudy
       images={[cm1, cm2, cm3, cm4, cm5, cm6]}
       role="UX / Design / Dev"
-      title="Course Manager"
+      title="RedVector Course Manager"
     >
       <p>
-        Course Manager has a long history too boring to tell, and it rightly holds a special place
-        in my heart. Envy Labs built the second version of a project called CentreLearn, which
-        became a major player in the firefighter & EMT e-training space (which is a userbase that
-        hates taking these training courses, which in itself is a very rewarding design challenge to
-        overcome, but I digress). Along with this very specific niche came years of domain knowledge
-        and navigating the complex regulations that surround it all. CentreLearn was doing well
-        until one competitor bought up the entire space, CentreLearn included. Fortunately, Envy
-        Labs stayed on to work with the new platform, and I got to reimagine everything from
-        scratch.
+        This project’s predecesor, CentreLearn, was a leader in online firefighter & EMT training,
+        managed by Envy Labs. But its success was driven by regulation and cost-saving measures
+        rather than customer satisfaction. As a government requirement, these public service workers
+        were forced to take these courses to maintain certification, and taking them online was just
+        cheaper.{' '}
+        <strong>
+          If I had to pick a favorite problem to solve on the web, it’s building interfaces for
+          people that hate using interfaces.
+        </strong>{' '}
+        Public service training is a special beast requiring decades of knowledge and experience to
+        navigate the sea of regulations and overlap between local, state, and federal government,
+        and private entities. In 2017, due to a large merger and new requirements in combining
+        systems, I got to reimagine everything from scratch through Envy&nbsp;Labs.
       </p>
       <p>
         I lead the design on the project that would now serve tens of thousands of firefighters,
@@ -276,14 +288,16 @@ const Home = () => (
         myriad ways to meet their rapidly-evolving business needs in modern public service
         curriculum. I typeset the UI in TFJ’s Mallory/Mallory Microplus [5], a humanist family that
         shines when it comes to readability. A huge part of this app was readability for the “old
-        dogs” being forced to learn “new tricks” (aka the Internet).
+        dogs” being forced to learn “new tricks” (aka the&nbsp;Internet).
       </p>
       <p>
-        I explain all that because it’s tough to describe this platform in only a few screens, but
-        we built and handed off the project in 2017. As of now, the client pivoted on the project
-        and assumed ownership over the design and dev work we provided. While it’s uncertain what
-        the final version of the system will look like once out of our hands, I’m still really proud
-        of this project and the thought and attention put into it.
+        It’s tough to describe this platform in only a few screens, but it’s one of my favorite
+        projects and one near and dear to my heart. We ended up handing off the project in 2017 to
+        RedVector’s internal design & development teams. We gave them a proven base of success and a
+        language to build their world with in a way that meets their business needs while catering
+        to the real people that rely on this for their jobs. As to the final end result of the
+        project, I can’t say. But regardless I’m really proud of this project and the thought and
+        attention put into&nbsp;it.
       </p>
     </CaseStudy>
     <SectionTitle>About</SectionTitle>
