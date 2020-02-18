@@ -7,7 +7,7 @@ import drew from '../../assets/drew1.jpg';
 import codepen from '../../assets/codepen.svg';
 import dribbble from '../../assets/dribbble.svg';
 import github from '../../assets/github.svg';
-import medium from '../../assets/medium.svg';
+import rss from '../../assets/rss.svg';
 import twitter from '../../assets/twitter.svg';
 
 const About = () => (
@@ -18,14 +18,13 @@ const About = () => (
     <div className={style.text}>
       <p>
         I’ve been a builder and creator of the Web since 2001, and I’m fortunate to have turned one
-        of my passions into a career. I’m a Lead Engineer at{' '}
+        of my passions into a career. I’m a Tech Lead at{' '}
         <a href="https://manifold.co" target="_blank" rel="noopener noreferrer">
           Manifold
         </a>
-        , building the biggest cross-platform cloud SaaS marketplace. For my career up until
-        Manifold, I was a one-person agency and handled web apps from concept to design to
-        development (a few of which are featured above!). From 2013–2017 I built
-        medium-to-large-scale web apps through{' '}
+        , delivering beautiful, functional UIs for a developer marketplace. Before that, I was a
+        one-person agency for nearly a decade and delivered web consulting, design, and development.
+        From 2013–2017 I consulted, designed, and engineered at an agency called{' '}
         <a href="http://madewithenvy.com" target="_blank" rel="noopener noreferrer">
           Envy&nbsp;Labs
         </a>{' '}
@@ -54,9 +53,8 @@ const About = () => (
         <br />
         1/ Good ideas should endure. Even if they’re old. Even if they’re not mine. 2/ Ideas without
         effort are worthless. 3/ Intentions don’t matter; impacts do. 4/ Everyone tries hard at
-        something. Notice it and thank them. 5/ Good relationships are built on making your
-        intentions clear. 6/ I can always change my mind with new information. 7/ Always
-        be&nbsp;kind.
+        something; start noticing. 5/ Lasting relationships are built on making your intentions
+        clear. 6/ I can always change my mind with new information. 7/ Always be&nbsp;kind.
         <br />
         <br />
         But enough about me.{' '}
@@ -65,13 +63,8 @@ const About = () => (
     </div>
     <h3 className={style.elsewhere}>Elsewhere</h3>
     <div className={style.links}>
-      <a
-        className={style.link}
-        href="https://medium.com/@drew_powers"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src={medium} alt="Drew Powers on Medium" />
+      <a className={style.link} href="https://blog.pow.rs">
+        <img src={rss} alt="Personal blog of Drew Powers" />
       </a>
       <a
         className={style.link}
