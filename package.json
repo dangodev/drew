@@ -11,7 +11,7 @@
   "dependencies": {
     "matter-js": "^0.14.2",
     "poly-decomp": "^0.3.0",
-    "preact": "^10.3.3"
+    "preact": "^10.4.4"
   },
   "devDependencies": {
     "if-env": "^1.0.4",

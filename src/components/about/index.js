@@ -37,7 +37,7 @@ const About = () => (
           All Things Open
         </a>{' '}
         and local meetups, and I contribute to{' '}
-        <a href="https://github.com/dangodev/" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/drwpow/" target="_blank" rel="noopener noreferrer">
           Open Source
         </a>
         . I’ve supported local creators through{' '}
@@ -68,7 +68,7 @@ const About = () => (
       </a>
       <a
         className={style.link}
-        href="https://twitter.com/_drewpowers"
+        href="https://twitter.com/drwpow"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -76,7 +76,7 @@ const About = () => (
       </a>
       <a
         className={style.link}
-        href="https://github.com/dangodev"
+        href="https://github.com/drwpow"
         target="_blank"
         rel="noopener noreferrer"
       >
