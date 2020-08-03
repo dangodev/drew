@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "src": "/about/?", "dest": "https://blog.pow.rs.now.sh/about/" },
+    { "src": "/blog(.*)", "dest": "https://blog.powers.now.sh/blog$1" }
+  ]
+}

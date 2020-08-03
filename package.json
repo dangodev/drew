@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "license": "MIT",
   "scripts": {
-    "build": "preact build",
+    "build": "preact build --no-service-worker",
     "dev": "preact watch",
     "serve": "preact build && preact serve",
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev"
@@ -11,7 +11,7 @@
   "dependencies": {
     "matter-js": "^0.14.2",
     "poly-decomp": "^0.3.0",
-    "preact": "^10.4.4"
+    "preact": "^10.4.6"
   },
   "devDependencies": {
     "if-env": "^1.0.4",

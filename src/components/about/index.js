@@ -63,7 +63,7 @@ const About = () => (
     </div>
     <h3 className={style.elsewhere}>Elsewhere</h3>
     <div className={style.links}>
-      <a className={style.link} href="https://blog.pow.rs">
+      <a className={style.link} href="./blog">
         <img src={rss} alt="Personal blog of Drew Powers" />
       </a>
       <a
